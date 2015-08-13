@@ -1,0 +1,522 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ========= END CSS RESET =========*/
+
+
+@font-face {
+	font-family: Roboto-Bold;  
+	src: url('fonts/Roboto-Bold.ttf');
+}
+
+@font-face {
+	font-family: Roboto-Light;  
+	src: url('fonts/Roboto-Light.ttf');
+}
+
+@font-face {
+	font-family: Roboto-Medium;  
+	src: url('fonts/Roboto-Medium.ttf');
+}
+
+@font-face {
+	font-family: Roboto-Thin;  
+	src: url('fonts/Roboto-Thin.ttf');
+}
+
+h1, h2, h3 {
+	font-family: 'Roboto-Bold'; 
+}
+
+p, li {
+    font-family: 'Roboto-Light';
+    font-size: 1em; 
+}
+
+a, address, ul, {
+	font-family: 'Roboto-Medium'; 
+}
+
+body {
+	background-color: #EEE;
+}
+
+header {
+	width: 100%; 
+    background-color: #333; 
+    position: relative; 
+    z-index: 10; 
+    padding-bottom: 1em; 
+}
+
+
+h1.logo {
+    width: 225px;
+    height: 50px; 
+    position: relative;
+    left: 1em; 
+    top: 1em; 
+}
+
+h1.logo span {
+    background: url('images/howleyLogo2.jpg') no-repeat center; 
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+}
+
+
+	
+h2.sec-title {
+	font-weight: bold; 
+	text-align: center;
+	font-size: 1.5em; 
+}
+
+
+nav.main-nav {
+    position: relative; 
+    top: -1em; 
+    width: 30%; 
+  	left: 35%;     
+}
+
+a.main-nav {
+    margin: 0 1em; 
+    color: white; 
+    text-decoration: none;     
+    font-family: 'Roboto-Light'; 
+}
+
+a.main-nav:hover, a.ftr-nav:hover {
+	text-decoration: underline; 
+}
+
+div.email {
+	height: 4em; 
+	width: 4em; 
+	background: url('images/emailWhite.jpg') no-repeat center; 
+	position: absolute; 
+	top: 0; 
+	right: 0; 
+	margin: 1em; 
+}
+
+p.phone {
+	font-family: 'Roboto-Bold';
+	position: absolute; 
+	right: 4em; 
+	top: 1.2em;  
+	color: white; 
+	float: right;
+	font-style: italic; 
+	font-size: 1.5em; 
+}
+
+div.email:hover {
+	background: url('images/emailWhite.jpg') no-repeat center; 
+}
+
+
+/* ========= FEATURE =========*/
+
+#feature {
+    width: 100%; 
+    background-color: #444; 
+    padding: 5em 0 0 0;    
+}
+
+video {
+	display: block; 
+	position: absolute; 
+	top: -145px; 
+	width: 100%;
+	z-index: -10px; 
+}
+
+#slide-wrap {
+	position: relative; 
+	top: -1em;
+    background-color: #FFF;  
+    width: 900px;
+    height: 300px;  
+    margin: 0em auto 4em auto;   
+    padding: 1em; 
+    opacity: .85
+}
+
+#slide-wrap img {	
+    width: 600px;
+    height: 300px;       
+    float: left;        
+}
+
+div.slide {	
+	background-color: #EEE; 	
+	width: 300px; ; 	
+	display: inline-block; 
+	position: absolute; 
+	top: 1em; 
+	bottom: 1em; 
+}
+
+div.slide h3 {
+	font-family: Arial; 
+	font-weight: bold; 
+	margin: 1em; 
+	font-size: 1.5em;  
+}
+
+div.slide p {
+	font-family: Arial;  
+	margin-left: 1.5em;  
+	font-size: 1em;  
+}
+
+div.slide ul {
+	font-family: Arial;  
+	margin: 1em 3em;  
+	font-size: 0.8em; 
+	line-height: 2em; 
+	list-style-type: disc; 	
+}
+
+div.slide a {
+	font-family: Arial;  
+	font-size: 0.8em; 
+	line-height: 2em; 
+	list-style-type: disc; 
+	margin: 3em; 	
+}
+
+/* ========== BRANDS =========== */ 
+
+#brands {
+	position: relative; 
+	top: -2em; 
+}
+
+#brand-wrap {
+	width: 69.4%; 
+	margin: auto;	
+}
+
+div.brand { 
+	width: 16.08%;  
+	background: linear-gradient(skyblue 20%, #333399 65%, #6699FF); 	
+	border: 1px solid skyblue;  
+	display: inline-block; 
+	position: relative
+}
+
+div.brand a {
+	display: block; 
+	text-decoration: none; 
+	text-align: center; 
+	line-height: 3em; 
+	color: white; 
+	font-weight: bold; 	
+	font-family: 'Roboto-Bold'; 
+}
+
+div.brand a:hover {
+	background-color: #FF9900; 
+}	
+
+/* ========= PROFILE =========*/
+
+#profile {
+	padding: 3em 0; 
+	background-color: white; 
+}
+
+#profile-wrap {	
+	width: 80%; 
+	margin: 1em auto; 
+}
+
+div.info {
+	width: 30%; 
+	display: inline-block; 
+	margin: 1em .85em; 
+	position: relative; 
+}
+
+img.info {
+	display: block; 
+	margin: 2em auto; 
+}
+
+
+
+p.info {
+	text-align: center; 
+	line-height: 1.5em; 
+	margin: 1em 0; 
+	color: gray; 
+}
+
+
+
+
+
+/* ========= FOOTER =========*/
+
+footer {
+	width: 100%; 	
+	background-color: #333; 
+	overflow: auto; 
+}
+
+
+#ftr-wrap {
+	width: 30%; 
+	float: right; 
+	margin-top: 2em; 
+}
+
+
+h2.ftr {	
+	width: 225px;
+    height: 50px; 
+    position: relative; 
+}
+
+h2.ftr span {
+	background: url('images/howleyLogo2.jpg') no-repeat center; 
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+}
+
+address.ftr {
+	margin: 0.5em 1em; 
+	padding: 1em; 	
+	font-family: 'Roboto-Light'; 
+	font-size: .8em; 
+	line-height: 1.5em; 
+	color: #EEE; 	
+}
+
+address.ftr h4 {
+	font-weight: bold; 
+	font-size: 1.25em; 
+}
+
+nav.ftr-nav a {
+	font-family: 'Roboto-Medium'; 
+	display: inline-block;  
+	margin: 1.5em 1em; 
+	color: white; 
+	text-decoration: none; 
+}
+
+#copyright {
+	color: white; 
+	background-color: #000; 
+	clear: both; 	
+	padding: 0.5em; 
+	font-size: .8em; 
+	text-align: center;
+}
+
+
+
+#sidebar {
+	width: 13%; 
+	position: relative; 
+	left: 10%; 
+	top: 1em; 
+}
+
+#sidebar h4 {
+	font-size: .8em; 
+	text-transform: uppercase; 
+	font-weight: bold; 
+	letter-spacing: 0.025em; 
+	color: #555;
+	font-family: 'Roboto-Medium';  
+}
+
+#sidebar a {
+	display: block; 
+	background-color: #BBB;
+	color: white; 
+	margin: .5em 0; 
+	text-decoration: none; 
+	padding: 0.5em 1em; 
+	font-family: 'Roboto-Medium'; 
+
+}
+
+#sidebar a:hover {	
+	background-color: #DDD;
+}
+
+#content {
+	background-color: white; 
+	border-top: 1px solid #CFCFCF; 
+	border-left: 1px solid #CFCFCF; 
+	width: 70%; 
+	float: right; 
+	margin: 1em 0em 0em 1em; 
+	padding: 2em 2em 4em 2em; 
+}
+
+#content h2 {
+	font-weight: bold; 
+	font-size: 1.5em; 	
+}
+
+/*========================================*/
+/*============ ABOUT PAGE ================*/ 
+/*========================================*/
+
+article figure {
+	width: 40%; 
+	float: right; 
+	margin: 2em 6em 1em 1em; 
+}
+
+article figure img {
+	width: 100%; 	
+}
+
+article figcaption {
+	font-style: italic; 
+	color: #555; 
+}
+
+article h3 {
+	margin: 1.5em 0 0.2em 0; 
+	font-weight: bold
+}
+article p {	
+	width: 60%; 	
+	line-height: 1.5em;   
+	color: #555; 
+
+}
+
+/*========================================*/
+/*============= PRODCUCTS ================*/ 
+/*========================================*/
+
+.col-1, .col-2 {	
+	width: 40%; 
+	float: left; 
+	
+}
+
+article ul li h3 {
+	font-size: 1.1em
+}
+article ul li ul li {
+	list-style-type: disc; 
+	margin-left: 1.5em; 
+	color: #555; 
+	line-height: 1.5em; 
+	font-size: .9em; 
+}
+
+
+/*========================================*/
+/*============== SERVICES ================*/ 
+/*========================================*/
+
+
+
+/*========================================*/
+/*=============== CONTACT ================*/ 
+/*========================================*/
+
+#cForm-wrap {
+	float: right; 
+	margin-right: 8em; 
+}
+
+#cInfo-wrap {
+	font-size: .9em;
+	width: 45%
+}
+
+#cInfo-wrap address {
+	margin: 3em 0 0 0; 
+	line-height: 1.4em; 
+	font-family: 'Roboto-Medium'; 
+	 	 
+}
+
+#cInfo-wrap h4 {
+	font-family: 'Roboto-Bold'; 
+	font-weight: bold; 
+	font-size: 1.3em; 
+	margin: .5em 0; 
+}
+
+
+div.phone {
+	padding-top: 0.5em; 
+	line-height: 1.5em; 
+}
+
+span.cTitle {
+	font-size: 0.8em; 
+	color: gray; 
+	text-transform: uppercase; 
+	font-weight: normal; 
+}
+
+span.large {
+	font-size: 1.3em; 
+	font-family: 'Roboto-Bold'; 
+	color: #555; 
+	font-weight: bold; 
+}
+
