@@ -3,9 +3,12 @@
 <html>
 	<head>
 		<title>Howley Agency Sales Company</title>
+		<link rel="stylesheet" type="text/css" href="reset.css">
 		<link type="text/css" rel="stylesheet" href="main.css" />
+		<link rel="stylesheet" type="text/css" href="slider.css">
 		<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
 		<script type="text/javascript" src="app.js"></script>
+		<script type="text/javascript" src="slideRun.js"></script>
 	</head>
 
 	<body>
@@ -23,61 +26,108 @@
 				<a href="contact.html" class="main-nav">Contact</a>
 			</nav>	
 			<p class="phone">616-785-9000</p>
-			<div class="email"></div>
+			<div class="email"><a href="mailto:info@dsshowley.com?Subject=Inquiry" target="_top"></a></div>
 
 		</header>
 
 		<section id="feature">
-			<video width="1500" height="800" autoplay loop>
-				<source src="images/fractalBlue.mp4" type="video/mp4">
-			</video>
-			<div id="slide-wrap">
-				<img class="slide" src="images/img.jpg" />				
-				<div class="slide">
-					<h3>Product Name</h3>
-					<p>Product Description goes here</p>
-					<ul>
-						<li>Bullet Point 1</li>
-						<li>Bullet Point 2</li>
-						<li>Bullet Point 3</li>
-					</ul>	
-					<a href="#">Click here to Learn More</a>
-				</div>
+			<div id="vid-wrap">
+				<video width="1500" height="800" autoplay loop>
+					<source src="images/fractalBlue.mp4" type="video/mp4">
+				</video>
 			</div>
+
+			<div id="slide-wrap">
+				<div id="slide-viewport">
+					<div id="slide-reel">
+						<div id="a"class="slide"><img class="slide" src="images/PKmach.jpg" /></div>
+						<div id="b"class="slide"><img class="slide" src="images/spirotherm.jpg" /></div>
+						<div id="c"class="slide"><img class="slide" src="images/PKsonic.jpg" /></div>
+						<div id="d"class="slide"><img class="slide" src="images/chronomiteER.jpg" /></div>	
+					</div>			
+				</div>
+
+				<div id="desc">
+					<div class="content show">
+						<h3>PK-Mach</h3>
+						<p>A paragraph of text introducing product. Describe the problem it solves, when it will be available, where it can be purchased, and other pertinent information.</p>
+						<ul>
+							<li>Selling Point #1</li>
+							<li>Selling Point #2</li>
+							<li>Selling Point #3</li>
+						</ul>
+						<div class="action-btn"><a href="#">Click Here To Learn More</a></div>
+					</div>
+					<div class="content">
+						<h3>Spirotherm</h3>
+						<p>A paragraph of text introducing product. Describe the problem it solves, when it will be available, where it can be purchased, and other pertinent information.</p>
+						<ul>
+							<li>Selling Point #1</li>
+							<li>Selling Point #2</li>
+							<li>Selling Point #3</li>
+						</ul>
+						<div class="action-btn"><a href="#">Click Here To Learn More</a></div>
+					</div>
+					<div class="content">
+						<h3>PK-Sonic</h3>
+						<p>A paragraph of text introducing product. Describe the problem it solves, when it will be available, where it can be purchased, and other pertinent information.</p>
+						<ul>
+							<li>Selling Point #1</li>
+							<li>Selling Point #2</li>
+							<li>Selling Point #3</li>
+						</ul>
+						<div class="action-btn"><a href="#">Click Here To Learn More</a></div>
+					</div>
+					<div class="content">
+						<h3>Chronomite ER</h3>
+						<p>A paragraph of text introducing product. Describe the problem it solves, when it will be available, where it can be purchased, and other pertinent information.</p>
+						<ul>
+							<li>Selling Point #1</li>
+							<li>Selling Point #2</li>
+							<li>Selling Point #3</li>
+						</ul>
+						<div class="action-btn"><a href="#">Click Here To Learn More</a></div>
+					</div>
+				</div>
+
+				<div id="sNav-wrap">
+					<div class="sNav"></div>
+					<div class="sNav"></div>
+					<div class="sNav"></div>
+					<div class="sNav"></div>		
+				</div>	
+
+			</div><!-- END SLIDE-WRAP -->
 			<section id="brands">
 				<div id="brand-wrap">
-					<div class="brand"><a href="">Chronomite</a></div>
-					<div class="brand"><a href="">Heat Timer</a></div>
-					<div class="brand"><a href="">Patterson-Kelley</a></div>
-					<div class="brand"><a href="">Security Chimney</a></div>
-					<div class="brand"><a href="">Spirotherm</a></div>
-					<div class="brand"><a href="">Wendland Tank</a></div>
+					<div class="brand"><a href="http://www.harscopk.com" target="_blank">Patterson-Kelley</a></div>
+					<div class="brand"><a href="http://www.spirotherm.com" target="_blank">Spirotherm</a></div>
+					<div class="brand"><a href="http://www.securitychimneys.com" target="_blank">Security Chimney</a></div>
+					<div class="brand"><a href="http://www.chronomite.com" target="_blank">Chronomite</a></div>
+					<div class="brand"><a href="http://www.heat-timer.com" target="_blank">Heat Timer</a></div>
+					<div class="brand"><a href="http://www.wendlandmfg.com" target="_blank">Wendland Tank</a></div>
 				</div>
 			</section>
 		</section>
 
 		
 
-		<section id="profile">
-			<div id="profile-wrap">
-				<div class="info">
-					<h2 class="sec-title">Who We Are</h2>
-					<img class="info" src="images/team1.png" />
-					<p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non leo nisi. Proin porta, dui vitae ultricies tincidunt, eros sapien euismod tortor, a tristique nunc augue vulputate metus.</p>
-				</div>				
-				
-				<div class="info">
-					<h2 class="sec-title">What We Do</h2>
-					<img class="info" src="images/sales1.png" />					
-					<p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non leo nisi. Proin porta, dui vitae ultricies tincidunt, eros sapien euismod tortor, a tristique nunc augue vulputate metus.</p>
-				</div>
-				
-				<div class="info">
-					<h2 class="sec-title">Who We Serve</h1>
-					<img class="info" src="images/shake1.png" />					
-					<p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non leo nisi. Proin porta, dui vitae ultricies tincidunt, eros sapien euismod tortor, a tristique nunc augue vulputate metus.</p>
-				</div>
-			</div>
+		<section id="home-content">
+			<article class="profile">
+				<h2 class="profile">Serving Michigan Since 1988</h2>
+				<p class="profile">Founded in 1988 by Gerry Howley, Howley Agency Sales, Co. represents quality HVAC equipment manufacturers. Serving the state of Michigan, we offer sales and technical support for the lines we have established in our territory, partnering with HVAC professionals, contractors and building owners.</p>
+			</article>
+			<article class="news">
+				<h2 class="news">What&#8217;s New</h2>
+				<ul class="news">
+					<li><a href="#">News Item #1 Headline Goes Here...</a></li>
+					<li><a href="#">News Item #2 Headline Goes Here...</a></li>
+					<li><a href="#">News Item #3 Headline Goes Here...</a></li>
+					<li><a href="#">News Item #4 Headline Goes Here...</a></li>
+				</ul>
+			</article>
+
+
 		</section>
 
 	

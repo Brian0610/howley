@@ -84,7 +84,7 @@ a, address, ul, {
 }
 
 body {
-	background-color: #EEE;
+	background-color: #CCCCFF;
 }
 
 header {
@@ -148,6 +148,12 @@ div.email {
 	margin: 1em; 
 }
 
+div.email a {
+	display: block; 
+	width: 100%; 
+	height: 100%; 
+}
+
 p.phone {
 	font-family: 'Roboto-Bold';
 	position: absolute; 
@@ -169,7 +175,17 @@ div.email:hover {
 #feature {
     width: 100%; 
     background-color: #444; 
-    padding: 5em 0 0 0;    
+    padding: 5em 0 0 0; 
+    position: relative;    
+}
+
+#vid-wrap {
+	position: absolute; 
+	width: 100%; 
+	height: 35.6em; 
+	overflow: hidden; 
+	top: 0; 
+	left: 0; 
 }
 
 video {
@@ -180,61 +196,6 @@ video {
 	z-index: -10px; 
 }
 
-#slide-wrap {
-	position: relative; 
-	top: -1em;
-    background-color: #FFF;  
-    width: 900px;
-    height: 300px;  
-    margin: 0em auto 4em auto;   
-    padding: 1em; 
-    opacity: .85
-}
-
-#slide-wrap img {	
-    width: 600px;
-    height: 300px;       
-    float: left;        
-}
-
-div.slide {	
-	background-color: #EEE; 	
-	width: 300px; ; 	
-	display: inline-block; 
-	position: absolute; 
-	top: 1em; 
-	bottom: 1em; 
-}
-
-div.slide h3 {
-	font-family: Arial; 
-	font-weight: bold; 
-	margin: 1em; 
-	font-size: 1.5em;  
-}
-
-div.slide p {
-	font-family: Arial;  
-	margin-left: 1.5em;  
-	font-size: 1em;  
-}
-
-div.slide ul {
-	font-family: Arial;  
-	margin: 1em 3em;  
-	font-size: 0.8em; 
-	line-height: 2em; 
-	list-style-type: disc; 	
-}
-
-div.slide a {
-	font-family: Arial;  
-	font-size: 0.8em; 
-	line-height: 2em; 
-	list-style-type: disc; 
-	margin: 3em; 	
-}
-
 /* ========== BRANDS =========== */ 
 
 #brands {
@@ -243,12 +204,12 @@ div.slide a {
 }
 
 #brand-wrap {
-	width: 69.4%; 
-	margin: auto;	
+	width: 71%; 
+	margin: 0.5em auto 0 auto;	
 }
 
 div.brand { 
-	width: 16.08%;  
+	width: 16.1%;  
 	background: linear-gradient(skyblue 20%, #333399 65%, #6699FF); 	
 	border: 1px solid skyblue;  
 	display: inline-block; 
@@ -266,45 +227,45 @@ div.brand a {
 }
 
 div.brand a:hover {
-	background-color: #FF9900; 
+	background-color: IndianRed; 
 }	
 
 /* ========= PROFILE =========*/
 
-#profile {
-	padding: 3em 0; 
+#home-content {
 	background-color: white; 
+	width: 100%; 
+	overflow: auto; 
 }
 
-#profile-wrap {	
-	width: 80%; 
-	margin: 1em auto; 
+h2.profile, h2.news {
+	font-family: 'Roboto-Bold', Arial, sans-serif; 
+	font-size: 1.2em; 
+	margin-bottom: .5em; 
 }
 
-div.info {
-	width: 30%; 
-	display: inline-block; 
-	margin: 1em .85em; 
-	position: relative; 
+article.profile {
+	width: 34%; 
+	float: left; 
+	margin: 2em 4em 4em 12em; 
 }
 
-img.info {
-	display: block; 
-	margin: 2em auto; 
+article.news {
+	border-left: 1px solid #BBB; 
+	width: 30%;  
+	margin: 2em; 
+	padding: 0em 2em 1em 2em; 
+	float: left; 
 }
 
-
-
-p.info {
-	text-align: center; 
-	line-height: 1.5em; 
-	margin: 1em 0; 
-	color: gray; 
+p.profile{ 
+	width: 100%; 
 }
 
-
-
-
+article.news ul li {
+	margin: 1em;
+	font-weight: bold;  
+}
 
 /* ========= FOOTER =========*/
 
@@ -386,7 +347,7 @@ nav.ftr-nav a {
 
 #sidebar a {
 	display: block; 
-	background-color: #BBB;
+	background-color: #7936ff;
 	color: white; 
 	margin: .5em 0; 
 	text-decoration: none; 
@@ -396,7 +357,7 @@ nav.ftr-nav a {
 }
 
 #sidebar a:hover {	
-	background-color: #DDD;
+	background-color: IndianRed;
 }
 
 #content {
@@ -465,6 +426,54 @@ article ul li ul li {
 	font-size: .9em; 
 }
 
+#product-map {	
+	width: 500px; 
+	height: 500px; 
+	background: url('images/mich.jpg');
+	position: relative; 
+}	
+
+img#pk {
+	display: block; 
+	position: absolute; 
+	top: 60px; 
+	left: 200px; 
+}
+
+img#chr {
+	display: block; 
+	position: absolute; 
+	top: 150px; 
+	left: 20px; 
+}
+
+img#sc {
+	display: block; 
+	position: absolute; 
+	top: 200px; 
+	left: 270px; 
+}
+
+img#ht {
+	display: block; 
+	position: absolute; 
+	top: 280px; 
+	left: 20px; 
+}
+
+img#sp {
+	display: block; 
+	position: absolute; 
+	top: 350px; 
+	left: 250px; 
+}
+
+img#wt {
+	display: block; 
+	position: absolute; 
+	top: 440px; 
+	left: 125px; 
+}
 
 /*========================================*/
 /*============== SERVICES ================*/ 
@@ -478,7 +487,7 @@ article ul li ul li {
 
 #cForm-wrap {
 	float: right; 
-	margin-right: 8em; 
+	margin-right: 12em; 
 }
 
 #cInfo-wrap {
@@ -501,8 +510,9 @@ article ul li ul li {
 }
 
 
-div.phone {
-	padding-top: 0.5em; 
+div.p-num {
+	width: 60%; 
+	margin: .5em 0; 
 	line-height: 1.5em; 
 }
 
@@ -511,12 +521,21 @@ span.cTitle {
 	color: gray; 
 	text-transform: uppercase; 
 	font-weight: normal; 
+	margin-right: 0.5em; 
 }
 
 span.large {
 	font-size: 1.3em; 
 	font-family: 'Roboto-Bold'; 
-	color: #555; 
+	color: IndianRed; 
 	font-weight: bold; 
 }
 
+div.howley-mail {
+	margin: 3em 0; 
+}
+
+div.howley-mail a {
+	color: IndianRed; 
+	text-decoration: none; 
+}
